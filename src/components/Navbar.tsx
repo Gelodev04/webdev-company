@@ -5,14 +5,14 @@ import logo from "./images/logo.png";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
-  const sidebarRef = React.useRef(null);
+  const sidebarRef = React.useRef<HTMLDivElement>(null);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const handleClickOutside = (e) => {
-    if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+  const handleClickOutside = (e: MouseEvent) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(e.target as Node)) {
       setIsSidebarOpen(false);
     }
   };

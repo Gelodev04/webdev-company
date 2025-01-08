@@ -1,4 +1,4 @@
-import React from "react";
+
 import check from "./images/check.png";
 
 function Secondsection() {

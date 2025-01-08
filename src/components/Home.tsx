@@ -1,4 +1,4 @@
-import React from 'react'
+
 import team from './images/team.jpg'
 
 function Firstsection() {
