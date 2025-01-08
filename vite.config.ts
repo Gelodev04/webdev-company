@@ -8,5 +8,5 @@ export default defineConfig({
     port: 5173, // Default port for Vite (or change as needed)
   },
   plugins: [react()],
-  base: '/Webcrafter'
+  base: '/webdev-company/'
 })
