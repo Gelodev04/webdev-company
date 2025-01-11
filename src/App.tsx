@@ -5,6 +5,10 @@ import Firstsection from './components/Home'
 import Secondsection from './components/About'
 import History from './components/History'
 import Services from './components/Services'
+import Pricing from './components/Pricing'
+import Faq from './components/Faq'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
  
@@ -16,6 +20,11 @@ function App() {
       <Secondsection/>
       <History/>
       <Services/>
+      <Pricing/>
+      <Faq/>
+      <Contact/>
+      <Footer/>
+      
     </>
   )
 }

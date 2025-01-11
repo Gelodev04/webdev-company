@@ -2,3 +2,14 @@
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     
 }
+
+
+
+  .sidebar li:hover{
+    background-color: rgb(221, 219, 219);
+    
+  
+    
+  }
+  
+  

@@ -1,10 +1,10 @@
 import { useRef, useEffect, useState } from "react";
 import CountUp from "react-countup";
-import "./style/History.css";
 import happines from "./images/happiness.png";
 import projects from "./images/projects.png";
 import support from "./images/support.png";
 import officeworker from "./images/officeworker.png";
+import "./style/History.css";
 
 function History() {
   const [inView, setInView] = useState(false);
@@ -33,53 +33,65 @@ function History() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="h-screen pt-10 flex flex-col justify-center">
-      <ul className="flex flex-col gap-4">
-        <li className="box px-5 bg-[#fff] rounded-lg mx-5 py-10 hover:bg-opacity-90">
-          <div className="flex items-center gap-4">
-            <img className="w-[50px]" src={happines} alt="happy" />
-            <div className="flex flex-col">
-              <h1 className="text-[2.3rem] text-[#2e269c]">
-                {inView && <CountUp end={232} duration={5} />}
-              </h1>
-              <p className="text-[1.1rem] text-gray-700">Happy Clients</p>
-            </div>
+    <section ref={sectionRef} className="py-12  ">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-800">Our History</h2>
+          <p className="text-gray-600 mt-4">
+            A brief overview of our journey and achievements.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-0  ">
+          <div className="flex flex-col items-center box py-[3rem] mx-7 rounded-lg ">
+            <img src={happines} alt="Happiness" className="w-16 h-16 mb-4" />
+            <h3 className="text-xl font-semibold text-gray-800">Happy Clients</h3>
+            {inView && (
+              <CountUp
+                start={0}
+                end={1000}
+                duration={3}
+                className="text-4xl font-bold text-[#004cff] mt-2"
+              />
+            )}
           </div>
-        </li>
-        <li className="box p-4 bg-[#fff] rounded-lg mx-5 py-10 hover:bg-opacity-90">
-          <div className="flex items-center gap-4">
-            <img className="w-[50px]" src={projects} alt="projects" />
-            <div className="flex flex-col">
-              <h1 className="text-[2.3rem] text-[#2e269c]">
-                {inView && <CountUp end={601} duration={5} />}
-              </h1>
-              <p className="text-[1.1rem] text-gray-700">Projects Done</p>
-            </div>
+          <div className="flex flex-col items-center box py-[3rem] mx-7 rounded-lg">
+            <img src={projects} alt="Projects" className="w-16 h-16 mb-4" />
+            <h3 className="text-xl font-semibold text-gray-800">Projects Completed</h3>
+            {inView && (
+              <CountUp
+                start={0}
+                end={150}
+                duration={3}
+                className="text-4xl font-bold text-[#004cff] mt-2"
+              />
+            )}
           </div>
-        </li>
-        <li className="box p-4 bg-[#fff] rounded-lg mx-5 py-10 hover:bg-opacity-90">
-          <div className="flex items-center gap-4">
-            <img className="w-[50px]" src={support} alt="support" />
-            <div className="flex flex-col">
-              <h1 className="text-[2.3rem] text-[#2e269c]">
-                {inView && <CountUp end={1567} duration={5} />}
-              </h1>
-              <p className="text-[1.1rem] text-gray-700">Hours Of Support</p>
-            </div>
+          <div className="flex flex-col items-center box py-[3rem] mx-7 rounded-lg">
+            <img src={support} alt="Support" className="w-16 h-16 mb-4" />
+            <h3 className="text-xl font-semibold text-gray-800">Support Hours</h3>
+            {inView && (
+              <CountUp
+                start={0}
+                end={5000}
+                duration={3}
+                className="text-4xl font-bold text-[#004cff] mt-2"
+              />
+            )}
           </div>
-        </li>
-        <li className="box p-4 bg-[#fff] rounded-lg mx-5 py-10 hover:bg-opacity-90">
-          <div className="flex items-center gap-4">
-            <img className="w-[50px]" src={officeworker} alt="workers" />
-            <div className="flex flex-col">
-              <h1 className="text-[2.3rem] text-[#2e269c]">
-                {inView && <CountUp end={84} duration={5} />}
-              </h1>
-              <p className="text-[1.1rem] text-gray-700">Hard Workers</p>
-            </div>
+          <div className="flex flex-col items-center box py-[3rem] mx-7 rounded-lg">
+            <img src={officeworker} alt="Office Worker" className="w-16 h-16 mb-4" />
+            <h3 className="text-xl font-semibold text-gray-800">Office Workers</h3>
+            {inView && (
+              <CountUp
+                start={0}
+                end={50}
+                duration={3}
+                className="text-4xl font-bold text-[#004cff] mt-2"
+              />
+            )}
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
   );
 }
