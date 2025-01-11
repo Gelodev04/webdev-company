@@ -1,9 +1,9 @@
-import React from "react";
 import "./style/all.css";
 
 function Pricing() {
   return (
-    <div className="pt-10 mx-7">
+    <div id="pricing" className="pt-12 mx-7 lg:min-h-screen">
+      {/* header */}
       <div className="flex items-center justify-center space-x-3">
         <span className="flex-grow-0 w-[4rem] h-[2px] rounded-full bg-[#004cff]"></span>
         <h1 className="text-[1.3rem] text-center font-bold tracking-wider text-gray-800 uppercase">
@@ -15,7 +15,8 @@ function Pricing() {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur,
         delectus quas ipsam dolor iure?{" "}
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 lg:h-[600px]">
         {[
           {
             title: "Basic",
@@ -84,6 +85,7 @@ function Pricing() {
           </div>
         ))}
       </div>
+      
     </div>
   );
 }

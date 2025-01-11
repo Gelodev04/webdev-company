@@ -80,6 +80,21 @@ function Navbar() {
                 Services
               </a>
             </li>
+            <li className="hidden md:block mx-2">
+              <a href="#pricing" className="text-[#493CFF]">
+                Pricing
+              </a>
+            </li>
+            <li className="hidden md:block mx-2">
+              <a href="#services" className="text-[#493CFF]">
+                FAQ
+              </a>
+            </li>
+            <li className="hidden md:block mx-2">
+              <a href="#services" className="text-[#493CFF]">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -101,7 +116,7 @@ function Navbar() {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="size-6"
+                className="size-6"
               >
                 <path
                   stroke-linecap="round"

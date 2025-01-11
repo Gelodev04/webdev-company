@@ -35,12 +35,7 @@ function History() {
   return (
     <section ref={sectionRef} className="py-12  ">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800">Our History</h2>
-          <p className="text-gray-600 mt-4">
-            A brief overview of our journey and achievements.
-          </p>
-        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-0  ">
           <div className="flex flex-col items-center box py-[3rem] mx-7 rounded-lg ">
             <img src={happines} alt="Happiness" className="w-16 h-16 mb-4" />

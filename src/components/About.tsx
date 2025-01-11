@@ -2,7 +2,7 @@ import check from "./images/check.png";
 
 function Secondsection() {
   return (
-    <section id="aboutus" className="pt-8">
+    <section id="aboutus" className="pt-8 ">
       <div className="mx-7">
         <div className="flex items-center justify-center space-x-3">
           <span className="flex-grow-0 w-[4rem] h-[2px] rounded-full bg-[#004cff]"></span>
