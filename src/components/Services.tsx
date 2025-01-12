@@ -13,7 +13,7 @@ function Services() {
 
       <p className='text-center pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sint accusantium consequatur autem officia laboriosam vitae maiores perspiciatis?</p>
 
-      <div className="text-center flex flex-col gap-5 mt-5 items-center md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 ">
+      <div className="text-center flex flex-col gap-5 mt-5 items-center md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:mt-[5rem]">
         {[
           {
             title: 'Title 1',
