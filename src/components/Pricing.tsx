@@ -16,7 +16,7 @@ function Pricing() {
         delectus quas ipsam dolor iure?{" "}
       </p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 lg:h-[600px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8  lg:justify-center lg:items-center">
         {[
           {
             title: "Basic",
@@ -36,7 +36,7 @@ function Pricing() {
         ].map((item, index) => (
           <div
             key={index}
-            className="pricing flex flex-col justify-center bg-white shadow-lg rounded-lg p-8 text-center group"
+            className={`pricing flex flex-col h-[400px]  justify-center bg-white shadow-lg rounded-lg p-8 text-center group ${index === 1 ? "border-2 border-[#004cff] lg:h-[600px]" : "lg:h-[500px]"}`}
           >
             <h1 className="text-2xl font-semibold text-gray-800 tracking-wider">
               {item.title}

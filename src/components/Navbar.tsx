@@ -8,6 +8,7 @@ function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const sidebarRef = React.useRef<HTMLDivElement>(null);
+  
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -42,11 +43,11 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`fixed w-full transition-transform duration-300 ${
+        className={`fixed w-full  transition-transform duration-300 ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex navbar bg-[#ffffff] mt-3 mx-2 px-5 justify-between rounded-full items-center py-2 bg-opacity-[0.1] sticky top-3 backdrop-blur-lg">
+        <div className="flex navbar lg:mx-[3rem] bg-[#ffffff] mt-3 mx-2 px-5 justify-between rounded-full items-center py-2 bg-opacity-[0.1] sticky top-3 backdrop-blur-lg">
           <div className="flex items-center gap-1">
             <img className="w-[55px]" src={logo} alt="logo" />
             <a
@@ -56,7 +57,8 @@ function Navbar() {
               WebCrafter
             </a>
           </div>
-          <ul className="flex items-center">
+          
+          <ul className="flex items-center font-semibold text-gray-800 gap-3 ">
             <li className="md:hidden">
               <img
                 className="w-[25px] cursor-pointer"
@@ -65,37 +67,42 @@ function Navbar() {
                 onClick={toggleSidebar}
               />
             </li>
-            <li className="hidden md:block mx-2">
-              <a href="#home" className="text-[#493CFF]">
+            <li className="hidden md:block mx-2 ">
+              <a href="#home" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out" >
                 Home
               </a>
             </li>
             <li className="hidden md:block mx-2">
-              <a href="#aboutus" className="text-[#493CFF]">
+              <a href="#aboutus" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out">
                 About
               </a>
             </li>
             <li className="hidden md:block mx-2">
-              <a href="#services" className="text-[#493CFF]">
+              <a href="#services" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out">
                 Services
               </a>
             </li>
             <li className="hidden md:block mx-2">
-              <a href="#pricing" className="text-[#493CFF]">
+              <a href="#pricing" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out">
                 Pricing
               </a>
             </li>
             <li className="hidden md:block mx-2">
-              <a href="#services" className="text-[#493CFF]">
+              <a href="#services" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out">
                 FAQ
               </a>
             </li>
             <li className="hidden md:block mx-2">
-              <a href="#services" className="text-[#493CFF]">
+              <a href="#services" className="text-[#] hover:text-[#004cff] transition-colors duration-200 ease-in-out">
                 Contact
               </a>
             </li>
+            
           </ul>
+
+          <button className="lg:block hidden text-sm bg-[#004cff] px-[12px] rounded-[5px] text-white py-[8px] mr-5 hover:bg-[hsl(222,100%,60%)]">
+            Get Started
+          </button>
         </div>
 
         {/* Sidebar */}
